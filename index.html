@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <div class="fogo caixa">
+            <h1 contenteditable="true">Dorigon</h1>
+   
+            
+        
+           
+        </body>
+        </div>
+    </div>
+    <input type="number" id="numero" min="10" max="100" value="24">
+            <input type="text">
+    <script>
+        const numero = document.getElementById("numero");
+        const cabecalho = document.querySelector('h1');
+        cabecalho.style.fontSize = numero.value + "px";
+        numero.addEventListener("input", () => (cabecalho.style.fontSize = numero.value + "px"));
+
+    </script>
+</body>
+</html>
